@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<z:anyType xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns=""
+	i:type="AxCompilerMetadata" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/">
+	<IsPublic>true</IsPublic>
+	<Methods>
+		<Method>
+			<Name>DMFDefinitionGroupExecution_onInserted</Name>
+			<IsStatic>true</IsStatic>
+			<Visibility>Public</Visibility>
+			<Attributes>
+				<AxAttribute>
+					<Name>DataEventHandler</Name>
+					<Parameters>
+						<AxAttributeParameter>
+							<Type>Intrinsic</Type>
+							<TypeValue>tableStr</TypeValue>
+							<AdditionalData>
+								<AxAttributeParameter>
+									<TypeValue>DMFDefinitionGroupExecutionHistory</TypeValue>
+									<AdditionalData />
+								</AxAttributeParameter>
+								<AxAttributeParameter>
+									<AdditionalData />
+								</AxAttributeParameter>
+								<AxAttributeParameter>
+									<AdditionalData />
+								</AxAttributeParameter>
+							</AdditionalData>
+						</AxAttributeParameter>
+						<AxAttributeParameter>
+							<Type>Enum</Type>
+							<TypeValue>DataEventType</TypeValue>
+							<AdditionalData>
+								<AxAttributeParameter>
+									<TypeValue>Inserted</TypeValue>
+									<AdditionalData />
+								</AxAttributeParameter>
+							</AdditionalData>
+						</AxAttributeParameter>
+					</Parameters>
+				</AxAttribute>
+			</Attributes>
+			<Parameters>
+				<AxMethodParameter>
+					<Tags></Tags>
+					<Type>Record</Type>
+					<TypeName>Common</TypeName>
+					<Name>sender</Name>
+				</AxMethodParameter>
+				<AxMethodParameter>
+					<Tags></Tags>
+					<Type>Class</Type>
+					<TypeName>DataEventArgs</TypeName>
+					<Name>e</Name>
+				</AxMethodParameter>
+			</Parameters>
+			<ReturnType>
+				<Tags></Tags>
+				<TypeName></TypeName>
+			</ReturnType>
+		</Method>
+	</Methods>
+</z:anyType>

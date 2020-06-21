@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<z:anyType xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns=""
+	i:type="AxCompilerMetadata" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/">
+	<Extends>BusinessEventsBase</Extends>
+	<IsFinal>true</IsFinal>
+	<IsPublic>true</IsPublic>
+	<Attributes>
+		<AxAttribute>
+			<Name>BusinessEvents</Name>
+			<Parameters>
+				<AxAttributeParameter>
+					<Type>Intrinsic</Type>
+					<TypeValue>classStr</TypeValue>
+					<AdditionalData>
+						<AxAttributeParameter>
+							<TypeValue>DMFImportStatusBusinessEventContract</TypeValue>
+							<AdditionalData />
+						</AxAttributeParameter>
+						<AxAttributeParameter>
+							<AdditionalData />
+						</AxAttributeParameter>
+						<AxAttributeParameter>
+							<AdditionalData />
+						</AxAttributeParameter>
+					</AdditionalData>
+				</AxAttributeParameter>
+				<AxAttributeParameter>
+					<TypeValue>"Data management import status business event"</TypeValue>
+					<AdditionalData />
+				</AxAttributeParameter>
+				<AxAttributeParameter>
+					<TypeValue>"Data management import status event to send the status of an import execution"</TypeValue>
+					<AdditionalData />
+				</AxAttributeParameter>
+				<AxAttributeParameter>
+					<Type>Enum</Type>
+					<TypeValue>ModuleAxapta</TypeValue>
+					<AdditionalData>
+						<AxAttributeParameter>
+							<TypeValue>DIXF</TypeValue>
+							<AdditionalData />
+						</AxAttributeParameter>
+					</AdditionalData>
+				</AxAttributeParameter>
+			</Parameters>
+		</AxAttribute>
+	</Attributes>
+	<Members>
+		<AxClassMemberVariable>
+			<Type>ExtendedDataType</Type>
+			<TypeName>RefRecId</TypeName>
+			<Name>recId</Name>
+			<Visibility>Private</Visibility>
+		</AxClassMemberVariable>
+	</Members>
+	<Methods>
+		<Method>
+			<Name>parmRecId</Name>
+			<Parameters>
+				<AxMethodParameter>
+					<Type>ExtendedDataType</Type>
+					<TypeName>RefRecId</TypeName>
+					<DefaultValue>recId</DefaultValue>
+					<Name>_recId</Name>
+				</AxMethodParameter>
+			</Parameters>
+			<ReturnType>
+				<Type>ExtendedDataType</Type>
+				<TypeName>RefRecId</TypeName>
+			</ReturnType>
+		</Method>
+		<Method>
+			<Name>newFromDMFDefinitionGroupExecutionRecId</Name>
+			<IsStatic>true</IsStatic>
+			<Visibility>Public</Visibility>
+			<Parameters>
+				<AxMethodParameter>
+					<Type>ExtendedDataType</Type>
+					<TypeName>RefRecId</TypeName>
+					<Name>_recId</Name>
+				</AxMethodParameter>
+			</Parameters>
+			<ReturnType>
+				<Type>Class</Type>
+				<TypeName>DMFImportStatusBusinessEvent</TypeName>
+			</ReturnType>
+			<Variables>
+				<AxMethodVariable>
+					<Type>Class</Type>
+					<TypeName>DMFImportStatusBusinessEvent</TypeName>
+					<Name>businessEvent</Name>
+				</AxMethodVariable>
+			</Variables>
+		</Method>
+		<Method>
+			<Name>new</Name>
+			<ReturnType>
+				<TypeName></TypeName>
+			</ReturnType>
+		</Method>
+		<Method>
+			<Name>buildContract</Name>
+			<Visibility>Public</Visibility>
+			<Attributes>
+				<AxAttribute>
+					<Name>Wrappable</Name>
+					<Parameters>
+						<AxAttributeParameter>
+							<Type>Boolean</Type>
+							<TypeValue>True</TypeValue>
+							<AdditionalData />
+						</AxAttributeParameter>
+					</Parameters>
+				</AxAttribute>
+				<AxAttribute>
+					<Name>Replaceable</Name>
+					<Parameters>
+						<AxAttributeParameter>
+							<Type>Boolean</Type>
+							<TypeValue>True</TypeValue>
+							<AdditionalData />
+						</AxAttributeParameter>
+					</Parameters>
+				</AxAttribute>
+			</Attributes>
+			<ReturnType>
+				<Type>Class</Type>
+				<TypeName>BusinessEventsContract</TypeName>
+			</ReturnType>
+			<Variables>
+				<AxMethodVariable>
+					<Type>Record</Type>
+					<TypeName>DMFDefinitionGroupExecution</TypeName>
+					<Name>dmfDefinitionGroupExecution</Name>
+				</AxMethodVariable>
+			</Variables>
+		</Method>
+	</Methods>
+</z:anyType>
